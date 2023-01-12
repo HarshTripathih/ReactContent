@@ -85,14 +85,49 @@
 
     //function as first class citizens
 
-    function x(){
-        let a = 20 
-        return function y(){
-            console.log(a)
-        }
-    }
-    let newFunc = x()
-    console.log(newFunc)
+    // function x(){
+    //     let a = 20 
+    //     return function y(){
+    //         console.log(a)
+    //     }
+    // }
+    // let newFunc = x()
+    // console.log(newFunc)
 
     //private method using with closures
-    
+// Questionn 1
+        // var b = 100
+        // function x(){
+        //     b = 200 
+        //     return function y(){
+        //         console.log(b)
+        //     }
+        // }
+        //x()()   
+        // //output 200
+
+//Question 2
+        // function run(a){
+        //     var b = a
+        //     return function y(){
+        //         b = b + 10
+        //         return b
+        //     }
+        // }
+        // const func = run(50)
+        // func()
+        // console.log(func())
+        // output : 70 
+
+//Function currying : where we can pass multiple argument inside functions
+
+
+// function curriedSum(a){
+//     return function y(b){
+//         return function z(c){
+//             return a+b+c
+//         }
+//     }
+// }
+
+// curriedSum(10)(20)(30)
